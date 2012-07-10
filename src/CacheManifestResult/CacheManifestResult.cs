@@ -6,7 +6,8 @@ namespace CacheManifestResult
 {
    public class CacheManifestResult : ContentResult
    {
-      private IList<string> _files;
+      private string _version;
+      private readonly IList<string> _files;
 
       public CacheManifestResult()
       {
@@ -19,6 +20,7 @@ namespace CacheManifestResult
 
          content.AppendLine("CACHE MANIFEST");
 
+         AddVersion(content);
          AddCache(content);
 
          Content = content.ToString();
@@ -29,6 +31,18 @@ namespace CacheManifestResult
       public void AddFile(string url)
       {
          _files.Add(url);
+      }
+
+      public void SetVersion(string version)
+      {
+         _version = version;
+      }
+
+      private void AddVersion(StringBuilder content)
+      {
+         if (string.IsNullOrEmpty(_version)) return;
+
+         content.AppendLine("# " + _version);
       }
 
       private void AddCache(StringBuilder content)
