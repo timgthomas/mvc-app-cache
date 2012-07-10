@@ -3,15 +3,15 @@
 namespace CacheManifestResult.Tests
 {
    [TestFixture]
-   public class ResultTests : TestBase
+   public class ContentTests : TestBase
    {
       [Test]
-      public void Should_return_the_correct_content_type()
+      public void Should_begin_with_the_correct_string()
       {
          var result = new CacheManifestResult();
          result.ExecuteResult(GetMockContext());
 
-         Assert.AreEqual("text/cache-manifest", result.ContentType);
+         Assert.IsTrue(result.Content.StartsWith("CACHE MANIFEST"));
       }
    }
 }

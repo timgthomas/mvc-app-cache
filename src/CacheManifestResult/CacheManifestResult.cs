@@ -6,6 +6,8 @@ namespace CacheManifestResult
    {
       public override void ExecuteResult(ControllerContext context)
       {
+         Content = "CACHE MANIFEST";
+
          ContentType = "text/cache-manifest";
       }
    }
