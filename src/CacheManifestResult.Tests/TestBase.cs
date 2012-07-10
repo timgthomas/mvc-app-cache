@@ -6,7 +6,7 @@ namespace CacheManifestResult.Tests
    {
       protected ControllerContext GetMockContext()
       {
-         return null
+         return null;
       }
    }
 }
