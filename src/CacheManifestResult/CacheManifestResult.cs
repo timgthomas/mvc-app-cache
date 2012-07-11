@@ -7,11 +7,11 @@ namespace CacheManifestResult
    public class CacheManifestResult : ContentResult
    {
       private string _version;
-      private readonly IList<string> _files;
+      private readonly IList<string> _cachedResources;
 
       public CacheManifestResult()
       {
-         _files = new List<string>();
+         _cachedResources = new List<string>();
       }
 
       public override void ExecuteResult(ControllerContext context)
@@ -21,21 +21,21 @@ namespace CacheManifestResult
          content.AppendLine("CACHE MANIFEST");
 
          AddVersion(content);
-         AddCache(content);
+         AddCacheResources(content);
 
          Content = content.ToString();
 
          ContentType = "text/cache-manifest";
       }
 
-      public void AddFile(string url)
-      {
-         _files.Add(url);
-      }
-
       public void SetVersion(string version)
       {
          _version = version;
+      }
+
+      public void AddCachedResource(string url)
+      {
+         _cachedResources.Add(url);
       }
 
       private void AddVersion(StringBuilder content)
@@ -45,13 +45,13 @@ namespace CacheManifestResult
          content.AppendLine("# " + _version);
       }
 
-      private void AddCache(StringBuilder content)
+      private void AddCacheResources(StringBuilder content)
       {
-         if (_files.Count == 0) return;
+         if (_cachedResources.Count == 0) return;
 
          content.AppendLine("CACHE:");
 
-         foreach (var file in _files)
+         foreach (var file in _cachedResources)
          {
             content.AppendLine(file);
          }

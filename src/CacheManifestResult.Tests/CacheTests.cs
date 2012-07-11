@@ -7,11 +7,11 @@ namespace CacheManifestResult.Tests
    public class CacheTests : TestBase
    {
       [Test]
-      public void Should_add_the_specified_file_to_the_cache()
+      public void Should_add_the_specified_resource_to_the_cache()
       {
          var result = new CacheManifestResult();
 
-         result.AddFile("/index.html");
+         result.AddCachedResource("/index.html");
 
          result.ExecuteResult(GetMockContext());
 
@@ -19,12 +19,12 @@ namespace CacheManifestResult.Tests
       }
 
       [Test]
-      public void Should_add_the_specified_files_to_the_cache()
+      public void Should_add_the_specified_resources_to_the_cache()
       {
          var result = new CacheManifestResult();
 
-         result.AddFile("/index.html");
-         result.AddFile("/logo.png");
+         result.AddCachedResource("/index.html");
+         result.AddCachedResource("/logo.png");
 
          result.ExecuteResult(GetMockContext());
 
