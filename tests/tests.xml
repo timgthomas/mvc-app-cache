@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Tim\Development\cache-manifest-result\src\CacheManifestResult.Tests\bin\Release\CacheManifestResult.Tests.dll" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-07-11" time="19:26:59">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5456" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\Tim\Development\cache-manifest-result" machine-name="BALDR" user="Tim" user-domain="Baldr" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Tim\Development\cache-manifest-result\src\CacheManifestResult.Tests\bin\Release\CacheManifestResult.Tests.dll" executed="True" result="Success" success="True" time="0.795" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="CacheManifestResult" executed="True" result="Success" success="True" time="0.783" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.782" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="CacheTests" executed="True" result="Success" success="True" time="0.766" asserts="0">
+                <results>
+                  <test-case name="CacheManifestResult.Tests.CacheTests.Should_add_the_specified_resource_to_the_cache" executed="True" result="Success" success="True" time="0.743" asserts="1" />
+                  <test-case name="CacheManifestResult.Tests.CacheTests.Should_add_the_specified_resources_to_the_cache" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="ContentTests" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                <results>
+                  <test-case name="CacheManifestResult.Tests.ContentTests.Should_begin_with_the_correct_string" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="ResultTests" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                <results>
+                  <test-case name="CacheManifestResult.Tests.ResultTests.Should_return_the_correct_content_type" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="VersionTests" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                <results>
+                  <test-case name="CacheManifestResult.Tests.VersionTests.Should_version_the_manifest" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
