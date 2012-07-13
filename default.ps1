@@ -2,7 +2,7 @@
 $script:project_config = "Release"
 
 properties {
-   $project_name = "CacheManifestResult"
+   $project_name = "MvcAppCache"
    $build_number = 1
    $version = "1.0.$build_number.0"
 
