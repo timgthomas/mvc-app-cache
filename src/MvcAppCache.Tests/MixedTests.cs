@@ -19,7 +19,7 @@ namespace MvcAppCache.Tests
 
          result.ExecuteResult(GetMockContext());
 
-         Assert.AreEqual(result.Content, string.Format("CACHE MANIFEST{0}CACHE:{0}/index.html{0}/logo.png{0}NETWORK:{0}/style.css{0}/app.js{0}", Environment.NewLine));
+         Assert.AreEqual(string.Format("CACHE MANIFEST{0}CACHE:{0}/index.html{0}/logo.png{0}NETWORK:{0}/style.css{0}/app.js{0}", Environment.NewLine), result.Content);
       }
    }
 }
