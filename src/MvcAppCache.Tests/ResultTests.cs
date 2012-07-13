@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace CacheManifestResult.Tests
+namespace MvcAppCache.Tests
 {
    [TestFixture]
    public class ResultTests : TestBase
@@ -8,7 +8,7 @@ namespace CacheManifestResult.Tests
       [Test]
       public void Should_return_the_correct_content_type()
       {
-         var result = new CacheManifestResult();
+         var result = new AppCacheResult();
          result.ExecuteResult(GetMockContext());
 
          Assert.AreEqual("text/cache-manifest", result.ContentType);

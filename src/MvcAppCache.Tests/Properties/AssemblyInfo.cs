@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CacheManifestResult")]
+[assembly: AssemblyTitle("MvcAppCache.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CacheManifestResult")]
+[assembly: AssemblyProduct("MvcAppCache.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("500b4a44-8e3e-48e2-9a09-df0c694b8fcd")]
+[assembly: Guid("7291eaa0-5253-4e71-a74c-294b0787b274")]
 
 // Version information for an assembly consists of the following four values:
 //

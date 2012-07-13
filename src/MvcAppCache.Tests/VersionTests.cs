@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace CacheManifestResult.Tests
+namespace MvcAppCache.Tests
 {
    [TestFixture]
    public class VersionTests : TestBase
@@ -9,7 +9,7 @@ namespace CacheManifestResult.Tests
       [Test]
       public void Should_version_the_manifest()
       {
-         var result = new CacheManifestResult();
+         var result = new AppCacheResult();
 
          result.SetVersion("v1.0");
 

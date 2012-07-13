@@ -2,15 +2,15 @@
 using System.Text;
 using System.Web.Mvc;
 
-namespace CacheManifestResult
+namespace MvcAppCache
 {
-   public class CacheManifestResult : ContentResult
+   public class AppCacheResult : ContentResult
    {
       private string _version;
       private readonly IList<string> _cachedResources;
       private readonly IList<string> _networkResources;
 
-      public CacheManifestResult()
+      public AppCacheResult()
       {
          _cachedResources = new List<string>();
          _networkResources = new List<string>();

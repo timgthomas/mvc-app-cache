@@ -8,8 +8,8 @@
     <ProjectGuid>{1CC75458-8129-41C8-9B3E-BC9596034D24}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CacheManifestResult.Tests</RootNamespace>
-    <AssemblyName>CacheManifestResult.Tests</AssemblyName>
+    <RootNamespace>MvcAppCache.Tests</RootNamespace>
+    <AssemblyName>MvcAppCache.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -79,13 +79,13 @@
     <Compile Include="VersionTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CacheManifestResult\CacheManifestResult.csproj">
-      <Project>{D18CCFF4-6461-4741-B02A-28A11DF499C3}</Project>
-      <Name>CacheManifestResult</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\MvcAppCache\MvcAppCache.csproj">
+      <Project>{D18CCFF4-6461-4741-B02A-28A11DF499C3}</Project>
+      <Name>MvcAppCache</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace CacheManifestResult.Tests
+namespace MvcAppCache.Tests
 {
    [TestFixture]
    public class NetworkTests : TestBase
@@ -9,7 +9,7 @@ namespace CacheManifestResult.Tests
       [Test]
       public void Should_add_the_specified_resource_to_the_network_section()
       {
-         var result = new CacheManifestResult();
+         var result = new AppCacheResult();
 
          result.AddNetworkResource("/index.html");
 
@@ -21,7 +21,7 @@ namespace CacheManifestResult.Tests
       [Test]
       public void Should_add_the_specified_resources_to_the_network_section()
       {
-         var result = new CacheManifestResult();
+         var result = new AppCacheResult();
 
          result.AddNetworkResource("/index.html");
          result.AddNetworkResource("/logo.png");

@@ -8,8 +8,8 @@
     <ProjectGuid>{D18CCFF4-6461-4741-B02A-28A11DF499C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CacheManifestResult</RootNamespace>
-    <AssemblyName>CacheManifestResult</AssemblyName>
+    <RootNamespace>MvcAppCache</RootNamespace>
+    <AssemblyName>MvcAppCache</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -64,7 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CacheManifestResult.cs" />
+    <Compile Include="AppCacheResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

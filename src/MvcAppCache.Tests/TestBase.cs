@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Moq;
 
-namespace CacheManifestResult.Tests
+namespace MvcAppCache.Tests
 {
    public abstract class TestBase
    {

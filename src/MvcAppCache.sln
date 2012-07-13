@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManifestResult", "CacheManifestResult\CacheManifestResult.csproj", "{D18CCFF4-6461-4741-B02A-28A11DF499C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAppCache", "MvcAppCache\MvcAppCache.csproj", "{D18CCFF4-6461-4741-B02A-28A11DF499C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManifestResult.Tests", "CacheManifestResult.Tests\CacheManifestResult.Tests.csproj", "{1CC75458-8129-41C8-9B3E-BC9596034D24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAppCache.Tests", "MvcAppCache.Tests\MvcAppCache.Tests.csproj", "{1CC75458-8129-41C8-9B3E-BC9596034D24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
