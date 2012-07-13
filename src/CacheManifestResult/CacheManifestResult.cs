@@ -8,10 +8,12 @@ namespace CacheManifestResult
    {
       private string _version;
       private readonly IList<string> _cachedResources;
+      private readonly IList<string> _networkResources;
 
       public CacheManifestResult()
       {
          _cachedResources = new List<string>();
+         _networkResources = new List<string>();
       }
 
       public override void ExecuteResult(ControllerContext context)
@@ -20,8 +22,9 @@ namespace CacheManifestResult
 
          content.AppendLine("CACHE MANIFEST");
 
-         AddVersion(content);
-         AddCacheResources(content);
+         AppendVersion(content);
+         AppendCacheResources(content);
+         AppendNetworkResources(content);
 
          Content = content.ToString();
 
@@ -38,22 +41,37 @@ namespace CacheManifestResult
          _cachedResources.Add(url);
       }
 
-      private void AddVersion(StringBuilder content)
+      public void AddNetworkResource(string url)
+      {
+         _networkResources.Add(url);
+      }
+
+      private void AppendVersion(StringBuilder content)
       {
          if (string.IsNullOrEmpty(_version)) return;
 
          content.AppendLine("# " + _version);
       }
 
-      private void AddCacheResources(StringBuilder content)
+      private void AppendCacheResources(StringBuilder content)
       {
-         if (_cachedResources.Count == 0) return;
+         AppendResources(content, "CACHE:", _cachedResources);
+      }
 
-         content.AppendLine("CACHE:");
+      private void AppendNetworkResources(StringBuilder content)
+      {
+         AppendResources(content, "NETWORK:", _networkResources);
+      }
 
-         foreach (var file in _cachedResources)
+      private void AppendResources(StringBuilder content, string resourceHeader, IList<string> resources)
+      {
+         if (resources.Count == 0) return;
+
+         content.AppendLine(resourceHeader);
+
+         foreach (var resource in resources)
          {
-            content.AppendLine(file);
+            content.AppendLine(resource);
          }
       }
    }
