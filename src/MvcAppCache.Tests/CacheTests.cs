@@ -7,7 +7,7 @@ namespace MvcAppCache.Tests
    public class CacheTests : TestBase
    {
       [Test]
-      public void Should_add_the_specified_resource_to_the_cache()
+      public void Should_add_the_specified_cache_resource_to_the_manifest()
       {
          var result = new AppCacheResult();
 
@@ -19,7 +19,7 @@ namespace MvcAppCache.Tests
       }
 
       [Test]
-      public void Should_add_the_specified_resources_to_the_cache()
+      public void Should_add_the_specified_cache_resources_to_the_manifest()
       {
          var result = new AppCacheResult();
 

@@ -7,7 +7,7 @@ namespace MvcAppCache.Tests
    public class NetworkTests : TestBase
    {
       [Test]
-      public void Should_add_the_specified_resource_to_the_network_section()
+      public void Should_add_the_specified_network_resource_to_the_manifest()
       {
          var result = new AppCacheResult();
 
@@ -19,7 +19,7 @@ namespace MvcAppCache.Tests
       }
 
       [Test]
-      public void Should_add_the_specified_resources_to_the_network_section()
+      public void Should_add_the_specified_network_resources_to_the_manifest()
       {
          var result = new AppCacheResult();
 
